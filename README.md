@@ -19,3 +19,40 @@ Este repositorio contiene el código fuente de una página web de prueba para "T
 * **Font Awesome 6:** Librería de íconos.
 
 ## 📂 Estructura del Proyecto
+/teo-accesorios-web/
+├── index.html        # Estructura principal de la página.
+├── style.css         # Estilos personalizados y adaptación de Bootstrap.
+└── script.js         # Funcionalidades JavaScript básicas.
+## 🚀 Cómo Ponerlo en Marcha
+
+Para visualizar este proyecto en tu entorno local, sigue estos sencillos pasos:
+
+1.  **Clona el repositorio:**
+    Si estás subiendo este proyecto a un nuevo repositorio, primero crea el repositorio vacío en GitHub, luego clona ese repositorio vacío a tu máquina local. Si ya tienes los archivos localmente, simplemente inicializa un repositorio Git dentro de la carpeta del proyecto.
+    ```bash
+    # Si vas a clonar un repositorio vacío
+    git clone [URL_DE_TU_REPOSITORIO]
+    cd [nombre-de-tu-carpeta-clonada]
+    # Luego, copia los archivos index.html, style.css y script.js a esta carpeta.
+    ```
+    O, si ya tienes los archivos y quieres inicializar Git:
+    ```bash
+    cd /ruta/a/tu/carpeta/teo-accesorios-web
+    git init
+    ```
+
+2.  **Abre `index.html`:**
+    Simplemente abre el archivo `index.html` en tu navegador web preferido (Chrome, Firefox, Edge, etc.). No necesitas un servidor web para este proyecto simple.
+
+## 🤝 Contribuciones
+
+Este es un proyecto de prueba. Si deseas hacer mejoras o sugerencias, no dudes en:
+
+* Abrir un "Issue" para reportar bugs o proponer nuevas características.
+* Enviar un "Pull Request" con tus contribuciones.
+
+## 📄 Licencia
+
+Este proyecto es de código abierto y está disponible bajo la licencia [MIT License](LICENSE) (puedes crear un archivo `LICENSE` en tu repositorio si lo deseas).
+
+---
