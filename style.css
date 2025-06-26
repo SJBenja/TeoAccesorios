@@ -1,0 +1,275 @@
+/* Colores basados en el logo de TEO Accesorios */
+:root {
+    --primary-color: #26a69a; /* Un verde azulado principal del logo */
+    --secondary-color: #e0f2f7; /* Un color crema/celeste muy claro del fondo del logo */
+    --text-dark: #333;
+    --text-light: #fff;
+    --hover-color: #1a7a70; /* Un tono más oscuro para hover */
+    --accent-color: #ff6f61; /* Puedes usar un color de acento si lo deseas */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--secondary-color); /* Fondo similar al del logo */
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    font-size: 0.9em;
+}
+
+/* Header */
+.navbar-header {
+    background-color: var(--text-light); /* Blanco para la barra superior donde está el logo */
+    border-bottom: 1px solid #eee;
+}
+
+.navbar-header .logo h1 {
+    font-family: Impact, sans-serif; /* Simula un estilo fuerte como el logo */
+    color: var(--primary-color);
+    font-size: 2.2em; /* Ajusta según sea necesario */
+    margin-bottom: 0;
+}
+
+.navbar-header .custom-btn-link {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    font-size: 0.85em;
+    padding: 0.25rem 0.5rem;
+}
+
+.navbar-header .custom-btn-link:hover {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+}
+
+.navbar-header i {
+    color: var(--primary-color); /* Iconos de búsqueda, carrito, redes */
+}
+
+/* Main Navigation */
+.main-nav {
+    background-color: var(--primary-color);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.main-nav .nav-link {
+    color: var(--text-light);
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.main-nav .nav-link:hover,
+.main-nav .nav-link.active {
+    background-color: var(--hover-color);
+    border-radius: 5px;
+}
+
+.main-nav .dropdown-menu {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 0;
+    margin-top: 0;
+}
+
+.main-nav .dropdown-item {
+    color: var(--text-light);
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.main-nav .dropdown-item:hover {
+    background-color: var(--hover-color);
+    color: var(--text-light);
+}
+
+/* Product Categories (botones) */
+.product-categories {
+    background-color: var(--text-light); /* Fondo blanco para las categorías */
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.btn-category {
+    background-color: var(--text-light);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 20px; /* Bordes redondeados */
+    font-size: 0.9em;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
+}
+
+.btn-category:hover {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Product Cards */
+.section-title {
+    color: var(--primary-color);
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.product-card {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: var(--text-light);
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    border-bottom: 1px solid #eee;
+}
+
+.product-title {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+}
+
+.product-price {
+    font-size: 1.2em;
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.btn-add-cart {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn-add-cart:hover {
+    background-color: var(--hover-color);
+    color: var(--text-light); /* Asegurarse que el color del texto no cambie */
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    font-size: 0.9em;
+}
+
+.footer .social-icons a {
+    color: var(--text-light);
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+    color: #cce7e4; /* Un tono más claro para el hover en los íconos */
+}
+
+/* Media Queries para Responsividad (ejemplos) */
+@media (max-width: 992px) {
+    /* Ajustes para tabletas y pantallas más pequeñas */
+    .navbar-header .logo h1 {
+        font-size: 1.8em;
+    }
+
+    .main-nav .nav-link {
+        padding: 0.5rem 0.7rem;
+    }
+
+    .btn-category {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Ajustes para móviles */
+    .navbar-header .d-flex {
+        flex-direction: column; /* Apila los elementos en móvil */
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar-header .logo {
+        order: -1; /* Mueve el logo arriba */
+        margin-bottom: 15px;
+    }
+
+    .navbar-header .d-flex.align-items-center:last-child {
+        margin-top: 10px;
+    }
+
+    .main-nav .nav {
+        flex-direction: column; /* Apila los elementos del nav */
+        align-items: center;
+    }
+
+    .main-nav .nav-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-nav .dropdown-menu {
+        width: 100%;
+        text-align: center;
+    }
+
+    .product-categories .d-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-category {
+        width: 90%; /* Ocupa más ancho en móvil */
+        margin-bottom: 8px;
+    }
+
+    .product-card {
+        margin-bottom: 20px; /* Espacio entre tarjetas en móvil */
+    }
+}
+
+@media (max-width: 576px) {
+    /* Ajustes extra pequeños */
+    .top-bar p {
+        font-size: 0.8em;
+    }
+
+    .navbar-header .logo h1 {
+        font-size: 1.5em;
+    }
+
+    .navbar-header .custom-btn-link {
+        margin-bottom: 5px;
+    }
+}
+/* Asegurar que los íconos sean visibles */
+.navbar-header .fa-brands,
+.footer .fa-brands {
+    display: inline-block; /* Asegura que el ícono no esté oculto */
+    font-size: 1.2em; /* Puedes ajustar el tamaño si es necesario */
+    color: var(--primary-color); /* Color principal del logo */
+}
+
+/* Ajuste específico para los íconos del footer si no aparecen en blanco */
+.footer .social-icons a i {
+    color: var(--text-light) !important; /* Forzar el color blanco en el footer */
+}
