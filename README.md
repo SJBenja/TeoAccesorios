@@ -25,25 +25,6 @@ Este repositorio contiene el código fuente de una página web de prueba para "T
 └── script.js         # Funcionalidades JavaScript básicas.
 ## 🚀 Cómo Ponerlo en Marcha
 
-Para visualizar este proyecto en tu entorno local, sigue estos sencillos pasos:
-
-1.  **Clona el repositorio:**
-    Si estás subiendo este proyecto a un nuevo repositorio, primero crea el repositorio vacío en GitHub, luego clona ese repositorio vacío a tu máquina local. Si ya tienes los archivos localmente, simplemente inicializa un repositorio Git dentro de la carpeta del proyecto.
-    ```bash
-    # Si vas a clonar un repositorio vacío
-    git clone [URL_DE_TU_REPOSITORIO]
-    cd [nombre-de-tu-carpeta-clonada]
-    # Luego, copia los archivos index.html, style.css y script.js a esta carpeta.
-    ```
-    O, si ya tienes los archivos y quieres inicializar Git:
-    ```bash
-    cd /ruta/a/tu/carpeta/teo-accesorios-web
-    git init
-    ```
-
-2.  **Abre `index.html`:**
-    Simplemente abre el archivo `index.html` en tu navegador web preferido (Chrome, Firefox, Edge, etc.). No necesitas un servidor web para este proyecto simple.
-
 ## 🤝 Contribuciones
 
 Este es un proyecto de prueba. Si deseas hacer mejoras o sugerencias, no dudes en:
