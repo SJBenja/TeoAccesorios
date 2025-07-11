@@ -2,7 +2,7 @@
 $companyInfo = getCompanyInfo();
 ?>
 
-<footer class="footer bg-dark text-white py-5 mt-5">
+<footer class="footer bg-dark text-white py-5">
     <div class="container">
         <div class="row">
             <!-- Información de la empresa -->
@@ -151,7 +151,7 @@ $companyInfo = getCompanyInfo();
             <div class="col-md-6 text-center text-md-end">
                 <p class="mb-0">
                     <small class="text-muted">
-                        Desarrollado con <i class="fas fa-heart text-danger"></i> en Argentina
+                        Desarrollado con <i class="fas fa-heart text-danger"></i> en Argentina 🇦🇷
                     </small>
                 </p>
             </div>
