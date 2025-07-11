@@ -1,289 +1,210 @@
-# 🚀 TEO Accesorios - Tu Estilo, Tu Camino
+# TEO Accesorios - Tu Estilo, Tu Camino
 
-Este repositorio contiene el código fuente de la página web de **TEO Accesorios**, una marca dedicada a ofrecer diseños únicos que marcan tu camino en accesorios. El proyecto está construido con PHP, HTML5, CSS3, JavaScript y utiliza las últimas tecnologías web.
+Sitio web profesional para TEO Accesorios, una empresa argentina especializada en accesorios de calidad. Desarrollado con PHP, Bootstrap 5, y Docker.
 
-## ✨ Características
+## 🚀 Características
 
-* **Diseño Moderno y Responsivo:** Adaptable a todos los dispositivos (escritorio, tabletas y móviles)
-* **Header Fijo:** Navegación que permanece visible durante el scroll
-* **Footer Diferenciado:** Información organizada por secciones con enlaces útiles
-* **API RESTful:** Backend preparado para consumo de base de datos
-* **Docker Ready:** Configuración completa con Nginx, PHP-FPM y MySQL
-* **Bootstrap 5:** Framework CSS más reciente para componentes UI
-* **Font Awesome 6:** Librería de íconos moderna
-* **Precios en Pesos Argentinos:** Formato de moneda local
-* **Configuración Dinámica:** Footer y header no hardcodeados para fácil mantenimiento
+### Diseño y UX
+- **Diseño responsivo** que se adapta a todos los dispositivos
+- **Header fijo** con menú que se ajusta al hacer scroll
+- **Paleta de colores personalizada** con tonos azure-web, light-blue, moonstone
+- **Footer diferenciado** con información de contacto y redes sociales
+- **Animaciones suaves** y transiciones elegantes
 
-## 🛠️ Tecnologías Utilizadas
+### Productos y Categorías
+- **Categorías destacadas** con imágenes ilustrativas:
+  - Mochilas
+  - Materos (productos regionales argentinos)
+  - Carteras
+  - Riñoneras
+- **Productos destacados** con imágenes reales de Unsplash
+- **Precios en pesos argentinos** (ARS)
+- **Productos regionales** como bolsos para mate
 
-### Frontend
-* **HTML5:** Estructura semántica de la página web
-* **CSS3:** Estilos personalizados con variables CSS y diseño responsivo
-* **JavaScript (ES6+):** Funcionalidades interactivas y animaciones
-* **Bootstrap 5.3.3:** Framework CSS para componentes y grid system
-* **Font Awesome 6.5.2:** Librería de íconos
+### Redes Sociales
+- **Iconos actualizados** en el footer:
+  - Instagram
+  - Facebook
+  - WhatsApp
+  - TikTok
+  - Twitter
 
-### Backend
-* **PHP 8.2:** Lenguaje de programación del lado del servidor
-* **MySQL 8.0:** Base de datos relacional
-* **PDO:** Acceso seguro a la base de datos
-* **API RESTful:** Endpoints para productos, categorías, blog y contacto
+### Tecnologías Utilizadas
+- **Backend**: PHP 8.2 con FPM
+- **Frontend**: HTML5, CSS3, JavaScript
+- **Framework CSS**: Bootstrap 5.3.3
+- **Iconos**: Font Awesome 7.0.0
+- **Servidor Web**: Nginx
+- **Base de Datos**: MySQL 8.0
+- **Contenedores**: Docker y Docker Compose
 
-### DevOps
-* **Docker:** Contenedores para desarrollo y producción
-* **Nginx:** Servidor web de alto rendimiento
-* **PHP-FPM:** Procesador PHP optimizado
-* **Docker Compose:** Orquestación de servicios
+## 🛠️ Instalación
 
-## 📂 Estructura del Proyecto
+### Prerrequisitos
+- Docker
+- Docker Compose
+- Git
+
+### Pasos de instalación
+
+1. **Clonar el repositorio**
+```bash
+git clone https://github.com/SJBenja/TeoAccesorios.git
+cd TeoAccesorios
+```
+
+2. **Levantar los contenedores**
+```bash
+docker compose up -d
+```
+
+3. **Verificar que los servicios estén funcionando**
+```bash
+docker compose ps
+```
+
+## 🌐 Acceso a los servicios
+
+- **Sitio web**: http://localhost
+- **phpMyAdmin**: http://localhost:8080
+  - Usuario: `root`
+  - Contraseña: `root_password`
+- **Base de datos MySQL**: localhost:3306
+  - Base de datos: `teo_accesorios`
+  - Usuario: `teo_user`
+  - Contraseña: `teo_password`
+
+## 📁 Estructura del proyecto
 
 ```
 TeoAccesorios/
-├── api/                          # API RESTful
-│   ├── controllers/              # Controladores de la API
-│   │   ├── ProductController.php
-│   │   ├── CategoryController.php
-│   │   ├── ContactController.php
-│   │   └── BlogController.php
-│   └── index.php                 # Punto de entrada de la API
-├── assets/                       # Archivos estáticos
+├── assets/
 │   ├── css/
-│   │   └── style.css            # Estilos personalizados
+│   │   └── style.css
 │   ├── js/
-│   │   └── script.js            # JavaScript principal
-│   └── images/                   # Imágenes del sitio
-├── includes/                     # Archivos PHP incluidos
-│   ├── config.php               # Configuración principal
-│   ├── functions.php            # Funciones auxiliares
-│   ├── header.php               # Header de la página
-│   ├── footer.php               # Footer de la página
-│   └── home.php                 # Página de inicio
-├── docker/                       # Configuración de Docker
+│   │   └── script.js
+│   ├── images/
+│   └── logo.jpeg
+├── includes/
+│   ├── config.php
+│   ├── functions.php
+│   ├── header.php
+│   ├── footer.php
+│   └── home.php
+├── docker/
 │   ├── nginx/
-│   │   ├── nginx.conf           # Configuración principal de Nginx
-│   │   └── conf.d/
-│   │       └── default.conf     # Configuración del sitio
 │   ├── php/
-│   │   ├── Dockerfile           # Dockerfile para PHP
-│   │   └── php.ini              # Configuración de PHP
 │   └── mysql/
-│       └── init.sql             # Script de inicialización de BD
-├── database/                     # Scripts de base de datos
-├── index.php                     # Punto de entrada principal
-├── docker-compose.yml           # Configuración de Docker Compose
-├── LICENSE                       # Licencia MIT
-└── README.md                     # Este archivo
+├── docker-compose.yml
+├── Dockerfile
+└── index.php
 ```
 
-## 🚀 Instalación y Configuración
+## 🔧 Configuración
 
-### Prerrequisitos
-* Docker y Docker Compose instalados
-* Git para clonar el repositorio
+### Variables de entorno
+Las configuraciones principales se encuentran en `includes/config.php`:
 
-### Pasos de Instalación
+```php
+$config = [
+    'company_name' => 'TEO Accesorios',
+    'company_email' => 'info@teoaccesorios.com',
+    'company_location' => 'Corrientes, Argentina',
+    'company_year' => '2025',
+    'currency' => 'ARS',
+    'currency_symbol' => '$'
+];
+```
 
-1. **Clonar el repositorio**
-   ```bash
-   git clone https://github.com/tu-usuario/teo-accesorios.git
-   cd teo-accesorios
-   ```
-
-2. **Configurar variables de entorno (opcional)**
-   ```bash
-   cp includes/config.php.example includes/config.php
-   # Editar includes/config.php con tus configuraciones
-   ```
-
-3. **Levantar los servicios con Docker**
-   ```bash
-   docker-compose up -d
-   ```
-
-4. **Verificar que los servicios estén funcionando**
-   ```bash
-   docker-compose ps
-   ```
-
-5. **Acceder a la aplicación**
-   - **Sitio web:** http://localhost
-   - **phpMyAdmin:** http://localhost:8080
-   - **API:** http://localhost/api/v1/
-
-### Configuración de Base de Datos
-
+### Base de datos
 La base de datos se inicializa automáticamente con:
-- **Host:** localhost (desde contenedor: mysql)
-- **Puerto:** 3306
-- **Base de datos:** teo_accesorios
-- **Usuario:** teo_user
-- **Contraseña:** teo_password
-- **Root password:** root_password
-
-## 📱 Páginas y Funcionalidades
-
-### Páginas Principales
-* **Inicio (Home):** Hero section, productos destacados, categorías
-* **Productos y Servicios:** Catálogo completo con filtros
-* **Quiénes Somos:** Información sobre la empresa
-* **Blog:** Artículos y noticias
-* **Contacto:** Formulario de contacto funcional
-* **Política de Privacidad:** Información legal
-
-### Funcionalidades
-* **Navegación Responsiva:** Menú adaptativo para móviles
-* **Búsqueda de Productos:** Filtrado por categoría y texto
-* **Carrito de Compras:** Gestión de productos (localStorage)
-* **Formulario de Contacto:** Validación y envío de mensajes
-* **API RESTful:** Endpoints para productos, categorías, blog
-* **Animaciones CSS:** Efectos visuales suaves
-* **Lazy Loading:** Carga optimizada de imágenes
-
-## 🔧 Configuración de Desarrollo
-
-### Variables de Configuración
-
-Edita `includes/config.php` para personalizar:
-- Información de la empresa
-- Configuración de base de datos
-- Configuración de API
-- Configuración de moneda
-
-### Personalización de Estilos
-
-Los estilos principales están en `assets/css/style.css` con variables CSS para fácil personalización:
-```css
-:root {
-    --primary-color: #26a69a;
-    --secondary-color: #00796b;
-    --accent-color: #ffc107;
-    /* ... más variables */
-}
-```
-
-## 🐳 Comandos Docker Útiles
-
-```bash
-# Levantar servicios
-docker-compose up -d
-
-# Ver logs
-docker-compose logs -f
-
-# Parar servicios
-docker-compose down
-
-# Reconstruir contenedores
-docker-compose up -d --build
-
-# Acceder al contenedor PHP
-docker-compose exec php sh
-
-# Acceder a MySQL
-docker-compose exec mysql mysql -u root -p
-```
-
-## 📊 API Endpoints
-
-### Productos
-- `GET /api/v1/products` - Listar productos
-- `GET /api/v1/products/{id}` - Obtener producto específico
-- `POST /api/v1/products` - Crear producto
-- `PUT /api/v1/products/{id}` - Actualizar producto
-- `DELETE /api/v1/products/{id}` - Eliminar producto
-
-### Categorías
-- `GET /api/v1/categories` - Listar categorías
-- `GET /api/v1/categories/{id}` - Obtener categoría específica
-
-### Contacto
-- `POST /api/v1/contact` - Enviar mensaje de contacto
-
-### Blog
-- `GET /api/v1/blog` - Listar posts del blog
-- `GET /api/v1/blog/{id}` - Obtener post específico
+- Tabla de productos
+- Datos de ejemplo
+- Configuración de categorías
 
 ## 🎨 Personalización
 
-### Colores y Estilos
-Los colores principales se pueden modificar en las variables CSS del archivo `assets/css/style.css`.
+### Colores
+Los colores principales están definidos en CSS variables:
 
-### Información de la Empresa
-Edita las constantes en `includes/config.php`:
-```php
-define('COMPANY_NAME', 'TEO Accesorios');
-define('COMPANY_EMAIL', 'info@teoaccesorios.com');
-define('COMPANY_LOCATION', 'Corrientes, Argentina');
+```css
+:root {
+    --azure-web: #EDFCFD;
+    --light-blue: #C1E0E3;
+    --moonstone: #5DA1A9;
+    --dark-color: #2C5A61;
+}
 ```
 
-### Contenido
-- **Productos:** Modifica la base de datos o usa la API
-- **Blog:** Gestiona posts desde la base de datos
-- **Categorías:** Configura desde la base de datos
+### Imágenes
+- **Logo**: `assets/logo.jpeg`
+- **Productos**: Imágenes de Unsplash con fallbacks
+- **Categorías**: Imágenes ilustrativas para cada categoría
 
-## 🔒 Seguridad
+## 🚀 Comandos útiles
 
-* **Headers de Seguridad:** Configurados en Nginx
-* **Validación de Entrada:** Sanitización de datos en PHP
-* **Prepared Statements:** Consultas SQL seguras
-* **CORS Configurado:** Para la API
-* **Archivos Sensibles Protegidos:** Configuración en Nginx
+### Docker
+```bash
+# Levantar servicios
+docker compose up -d
 
-## 📈 Rendimiento
+# Detener servicios
+docker compose down
 
-* **OPcache Habilitado:** Para PHP
-* **Gzip Compression:** En Nginx
-* **Lazy Loading:** Para imágenes
-* **CDN:** Bootstrap y Font Awesome desde CDN
-* **Caching:** Headers de cache para archivos estáticos
+# Ver logs
+docker compose logs
 
-## 🤝 Contribuciones
+# Reconstruir imágenes
+docker compose build --no-cache
+```
 
-Este es un proyecto de código abierto. Si deseas contribuir:
+### Desarrollo
+```bash
+# Verificar estado de contenedores
+docker compose ps
 
-1. Fork el repositorio
-2. Crea una rama para tu feature (`git checkout -b feature/nueva-funcionalidad`)
-3. Commit tus cambios (`git commit -am 'Agregar nueva funcionalidad'`)
-4. Push a la rama (`git push origin feature/nueva-funcionalidad`)
-5. Crea un Pull Request
+# Acceder al contenedor PHP
+docker compose exec php sh
 
-### Reportar Bugs
-Abre un "Issue" para reportar bugs o proponer nuevas características.
+# Ver logs en tiempo real
+docker compose logs -f
+```
+
+## 📝 Mejoras implementadas
+
+### Versión actual (v1.2)
+- ✅ **Emoji de Argentina** 🇦🇷 en el footer
+- ✅ **Footer fijo** sin problemas de salto
+- ✅ **Imágenes ilustrativas** para categorías y productos
+- ✅ **Productos regionales argentinos** (bolsos para mate)
+- ✅ **Redes sociales actualizadas** (TikTok, Twitter, sin YouTube)
+- ✅ **Font Awesome 7.0.0** para iconos más completos
+- ✅ **Archivo .gitignore** completo
+- ✅ **Docker Compose optimizado** (sin version obsoleta)
+
+### Características técnicas
+- **Layout flexbox** para footer fijo
+- **Imágenes responsivas** con object-fit
+- **Fallbacks** para imágenes que no cargan
+- **CSS variables** para fácil personalización
+- **Animaciones CSS** suaves y profesionales
+
+## 🤝 Contribución
+
+1. Fork el proyecto
+2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
+3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
+4. Push a la rama (`git push origin feature/AmazingFeature`)
+5. Abre un Pull Request
 
 ## 📄 Licencia
 
-Este proyecto está licenciado bajo la **Licencia MIT** - ver el archivo [LICENSE](LICENSE) para más detalles.
+Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
 
-```
-MIT License
+## 👨‍💻 Desarrollado con ❤️ en Argentina 🇦🇷
 
-Copyright (c) 2025 TEO Accesorios
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
-
-## 📞 Contacto
-
-* **Email:** info@teoaccesorios.com
-* **Ubicación:** Corrientes, Argentina
-* **Sitio Web:** [TEO Accesorios](http://localhost)
+**TEO Accesorios** - Tu Estilo, Tu Camino
 
 ---
 
-**Desarrollado con ❤️ en Argentina**
+*Última actualización: Julio 2025*
