@@ -130,8 +130,11 @@ $companyInfo = getCompanyInfo();
                     <a href="#" class="text-white me-3 fs-5" title="WhatsApp">
                         <i class="fab fa-whatsapp"></i>
                     </a>
-                    <a href="#" class="text-white fs-5" title="YouTube">
-                        <i class="fab fa-youtube"></i>
+                    <a href="#" class="text-white me-3 fs-5" title="TikTok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="#" class="text-white fs-5" title="Twitter">
+                        <i class="fab fa-twitter"></i>
                     </a>
                 </div>
             </div>
