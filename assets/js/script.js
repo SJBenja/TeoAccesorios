@@ -24,13 +24,31 @@ function initNavbar() {
     const navbar = document.querySelector('.navbar-header');
     const navbarToggler = document.querySelector('.navbar-toggler');
     const navbarCollapse = document.querySelector('.navbar-collapse');
+    const menuSpacer = document.querySelector('.menu-spacer');
     
     // Efecto de scroll en la navbar
     window.addEventListener('scroll', function() {
         if (window.scrollY > 100) {
             navbar.classList.add('scrolled');
+            navbar.style.position = 'fixed';
+            navbar.style.top = '0';
+            navbar.style.left = '0';
+            navbar.style.right = '0';
+            navbar.style.zIndex = '1030';
+            
+            // Agregar espaciador para compensar el header fijo
+            if (menuSpacer) {
+                menuSpacer.style.height = navbar.offsetHeight + 'px';
+                menuSpacer.style.display = 'block';
+            }
         } else {
             navbar.classList.remove('scrolled');
+            navbar.style.position = 'relative';
+            
+            // Ocultar espaciador
+            if (menuSpacer) {
+                menuSpacer.style.display = 'none';
+            }
         }
     });
     
@@ -110,7 +128,7 @@ function initProductCards() {
             });
             
             img.addEventListener('error', function() {
-                this.src = 'https://via.placeholder.com/300x300/26a69a/ffffff?text=Producto';
+                this.src = 'https://via.placeholder.com/300x300/5DA1A9/ffffff?text=Producto';
             });
         }
     });

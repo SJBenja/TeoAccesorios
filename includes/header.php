@@ -14,11 +14,12 @@ $currentPage = getCurrentPage();
 </div>
 
 <!-- Header Principal -->
-<header class="navbar-header sticky-top">
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+<header class="navbar-header">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <!-- Logo -->
-            <a class="navbar-brand" href="index.php">
+            <a class="navbar-brand d-flex align-items-center" href="index.php">
+                <img src="assets/logo.jpeg" alt="<?php echo $companyInfo['name']; ?>" class="me-2">
                 <h1 class="mb-0"><?php echo $companyInfo['name']; ?></h1>
             </a>
 
@@ -99,4 +100,7 @@ $currentPage = getCurrentPage();
             </div>
         </div>
     </nav>
-</header> 
+</header>
+
+<!-- Espaciador para el menú fijo -->
+<div class="menu-spacer"></div> 
