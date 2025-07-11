@@ -46,6 +46,9 @@ $categories = getProductCategories();
         <div class="row">
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="category-card text-center p-4 rounded shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=300&h=200&fit=crop&crop=center" 
+                         class="img-fluid rounded mb-3" alt="Mochilas" 
+                         onerror="this.src='https://via.placeholder.com/300x200/5DA1A9/ffffff?text=Mochilas'">
                     <div class="category-icon mb-3">
                         <i class="fas fa-briefcase fa-3x text-primary"></i>
                     </div>
@@ -58,6 +61,9 @@ $categories = getProductCategories();
             </div>
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="category-card text-center p-4 rounded shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=200&fit=crop&crop=center" 
+                         class="img-fluid rounded mb-3" alt="Materos" 
+                         onerror="this.src='https://via.placeholder.com/300x200/5DA1A9/ffffff?text=Materos'">
                     <div class="category-icon mb-3">
                         <i class="fas fa-mug-hot fa-3x text-primary"></i>
                     </div>
@@ -70,6 +76,9 @@ $categories = getProductCategories();
             </div>
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="category-card text-center p-4 rounded shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=300&h=200&fit=crop&crop=center" 
+                         class="img-fluid rounded mb-3" alt="Carteras" 
+                         onerror="this.src='https://via.placeholder.com/300x200/5DA1A9/ffffff?text=Carteras'">
                     <div class="category-icon mb-3">
                         <i class="fas fa-handbag fa-3x text-primary"></i>
                     </div>
@@ -82,6 +91,9 @@ $categories = getProductCategories();
             </div>
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="category-card text-center p-4 rounded shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1591561954557-26941169b49e?w=300&h=200&fit=crop&crop=center" 
+                         class="img-fluid rounded mb-3" alt="Riñoneras" 
+                         onerror="this.src='https://via.placeholder.com/300x200/5DA1A9/ffffff?text=Riñoneras'">
                     <div class="category-icon mb-3">
                         <i class="fas fa-bag-shopping fa-3x text-primary"></i>
                     </div>
@@ -146,7 +158,7 @@ $categories = getProductCategories();
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="card product-card h-100 shadow-sm">
-                        <img src="https://images.unsplash.com/photo-1584917865442-48f60103fc96?w=300&h=300&fit=crop&crop=center" 
+                        <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=300&h=300&fit=crop&crop=center" 
                              class="card-img-top" alt="Cartera Elegante" 
                              onerror="this.src='https://via.placeholder.com/300x300/5DA1A9/ffffff?text=Cartera+Elegante'">
                         <div class="card-body text-center">
@@ -212,6 +224,103 @@ $categories = getProductCategories();
                         <div class="card-body text-center">
                             <h5 class="card-title product-title">Billetera Clásica</h5>
                             <p class="card-text product-price">$4.500</p>
+                            <a href="#" class="btn btn-primary btn-sm">Ver Producto</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Productos regionales argentinos -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card product-card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop&crop=center" 
+                             class="card-img-top" alt="Bolso Matero Artesanal" 
+                             onerror="this.src='https://via.placeholder.com/300x300/5DA1A9/ffffff?text=Bolso+Matero+Artesanal'">
+                        <div class="card-body text-center">
+                            <h5 class="card-title product-title">Bolso Matero Artesanal</h5>
+                            <p class="card-text product-price">$7.800</p>
+                            <a href="#" class="btn btn-primary btn-sm">Ver Producto</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card product-card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=300&h=300&fit=crop&crop=center" 
+                             class="card-img-top" alt="Mochila Universitaria" 
+                             onerror="this.src='https://via.placeholder.com/300x300/5DA1A9/ffffff?text=Mochila+Universitaria'">
+                        <div class="card-body text-center">
+                            <h5 class="card-title product-title">Mochila Universitaria</h5>
+                            <p class="card-text product-price">$13.500</p>
+                            <a href="#" class="btn btn-primary btn-sm">Ver Producto</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card product-card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=300&h=300&fit=crop&crop=center" 
+                             class="card-img-top" alt="Cartera de Cuero" 
+                             onerror="this.src='https://via.placeholder.com/300x300/5DA1A9/ffffff?text=Cartera+de+Cuero'">
+                        <div class="card-body text-center">
+                            <h5 class="card-title product-title">Cartera de Cuero</h5>
+                            <p class="card-text product-price">$18.000</p>
+                            <a href="#" class="btn btn-primary btn-sm">Ver Producto</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card product-card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1591561954557-26941169b49e?w=300&h=300&fit=crop&crop=center" 
+                             class="card-img-top" alt="Riñonera Urbana" 
+                             onerror="this.src='https://via.placeholder.com/300x300/5DA1A9/ffffff?text=Riñonera+Urbana'">
+                        <div class="card-body text-center">
+                            <h5 class="card-title product-title">Riñonera Urbana</h5>
+                            <p class="card-text product-price">$5.200</p>
+                            <a href="#" class="btn btn-primary btn-sm">Ver Producto</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card product-card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1583485088034-697b5bc36b35?w=300&h=300&fit=crop&crop=center" 
+                             class="card-img-top" alt="Organizador de Escritorio" 
+                             onerror="this.src='https://via.placeholder.com/300x300/5DA1A9/ffffff?text=Organizador+de+Escritorio'">
+                        <div class="card-body text-center">
+                            <h5 class="card-title product-title">Organizador de Escritorio</h5>
+                            <p class="card-text product-price">$4.800</p>
+                            <a href="#" class="btn btn-primary btn-sm">Ver Producto</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card product-card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=300&h=300&fit=crop&crop=center" 
+                             class="card-img-top" alt="Accesorio Mate Premium" 
+                             onerror="this.src='https://via.placeholder.com/300x300/5DA1A9/ffffff?text=Accesorio+Mate+Premium'">
+                        <div class="card-body text-center">
+                            <h5 class="card-title product-title">Accesorio Mate Premium</h5>
+                            <p class="card-text product-price">$3.200</p>
+                            <a href="#" class="btn btn-primary btn-sm">Ver Producto</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card product-card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=300&h=300&fit=crop&crop=center" 
+                             class="card-img-top" alt="Porta Laptop 13" 
+                             onerror="this.src='https://via.placeholder.com/300x300/5DA1A9/ffffff?text=Porta+Laptop+13'">
+                        <div class="card-body text-center">
+                            <h5 class="card-title product-title">Porta Laptop 13"</h5>
+                            <p class="card-text product-price">$8.900</p>
+                            <a href="#" class="btn btn-primary btn-sm">Ver Producto</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card product-card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1627123424574-724758594e93?w=300&h=300&fit=crop&crop=center" 
+                             class="card-img-top" alt="Billetera Minimalista" 
+                             onerror="this.src='https://via.placeholder.com/300x300/5DA1A9/ffffff?text=Billetera+Minimalista'">
+                        <div class="card-body text-center">
+                            <h5 class="card-title product-title">Billetera Minimalista</h5>
+                            <p class="card-text product-price">$3.800</p>
                             <a href="#" class="btn btn-primary btn-sm">Ver Producto</a>
                         </div>
                     </div>
