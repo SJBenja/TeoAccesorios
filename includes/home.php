@@ -30,7 +30,7 @@ $categories = getProductCategories();
                 </div>
             </div>
             <div class="col-lg-6 text-center">
-                <img src="assets/images/hero-image.jpg" alt="TEO Accesorios" class="img-fluid rounded shadow-lg" 
+                <img src="assets/logo.jpeg" alt="TEO Accesorios" class="img-fluid rounded shadow-lg" 
                      onerror="this.src='https://via.placeholder.com/600x400/5DA1A9/ffffff?text=TEO+Accesorios'">
             </div>
         </div>
